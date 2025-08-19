@@ -3,7 +3,7 @@ build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
-**/src/main/java/com.SRad.discordbot/BotTokenStorage
+.src/main/java/**/BotTokenStorage.clas
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
