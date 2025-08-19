@@ -3,7 +3,7 @@ build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
-.src/main/java/**/BotTokenStorage.clas
+.src/main/java/**/BotTokenStorage.class
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
