@@ -4,7 +4,7 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 src/main/java/SRad.discordbot.BotTokenStorage.class
-src/main/resources/BotToken.properties
+src/config.properties
 
 
 ### IntelliJ IDEA ###
