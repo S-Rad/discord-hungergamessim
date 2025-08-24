@@ -2,6 +2,7 @@ package com.SRad.discordbot;
 
 import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Activity;
+import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.sharding.DefaultShardManagerBuilder;
 import net.dv8tion.jda.api.sharding.ShardManager;
 
@@ -19,7 +20,11 @@ public class BotMain {
         DefaultShardManagerBuilder builder = DefaultShardManagerBuilder.createDefault(getBotToken());
         builder.setStatus(OnlineStatus.ONLINE);
         builder.setActivity(Activity.watching("you"));
+        builder.enableIntents(GatewayIntent.MESSAGE_CONTENT);
         shardManager = builder.build();
+
+        shardManager.addEventListener(new MyListener());
+
 
     }
 
