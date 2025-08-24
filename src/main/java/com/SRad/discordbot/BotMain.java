@@ -45,6 +45,6 @@ public class BotMain {
         }catch(IOException e){
             System.err.println("fehlgeschlagen: " + e.getMessage());
         }
-        return properties.getProperty("bot.token", "fail");
+        return properties.getProperty("bot.token");
     }
 }
